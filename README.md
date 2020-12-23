@@ -23,6 +23,21 @@ curl -X GET http://127.0.0.1:8000/GET/note/{note_id}/
 curl -X DELETE http://127.0.0.1:8000/DELETE/note/{note_id}/
 ```
 
+
+## For Postman
+
+* **Create a new note containing a note title and content**  
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/postnote.png)
+* **Edit the title or content of an existing note**  
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/putnote.png)
+* **Get a list of titles of all the notes in the system**  
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/getnotes.png)
+* **Get the title and content of a particular note**  
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/postnote.png)
+* **Delete a note from the system**  
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/deletenote.png)
+![postnote](https://github.com/iharshit009/Notes-Api/blob/master/Images/afterdeletenotes.png)
+
 ## How to run this Project
 1. Clone the Repo
 2. Use Pip and run `pip3 install -r requirements.txt`
