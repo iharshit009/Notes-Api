@@ -8,7 +8,7 @@ curl -d '{"title":"<your title here>", "content":"<your content here>"}' -H 'Con
 ```
 * **Edit the title or content of an existing note**  
 ```bash
-curl -X PUT -d '{"title":"<your updated title here>", "content":"<your updated content here>"}' -H 'Content-Type: application/json' http://127.0.0.1:8000/PUT/note/<int:pk>/
+curl -X PUT -d '{"title":"<your updated title here>", "content":"<your updated content here>"}' -H 'Content-Type: application/json' http://127.0.0.1:8000/PUT/note/{note_id}/
 ```
 * **Get a list of titles of all the notes in the system**  
 ```bash
@@ -16,11 +16,11 @@ curl -X GET http://127.0.0.1:8000/GET/notes/
 ```
 * **Get the title and content of a particular note**  
 ```bash
-curl -X GET http://127.0.0.1:8000/GET/note/<int:pk>/
+curl -X GET http://127.0.0.1:8000/GET/note/{note_id}/
 ```
 * **Delete a note from the system**  
 ```bash
-curl -X DELETE http://127.0.0.1:8000/DELETE/note/<int:pk>/
+curl -X DELETE http://127.0.0.1:8000/DELETE/note/{note_id}/
 ```
 
 ## How to run this Project
