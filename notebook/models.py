@@ -1,12 +1,12 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Notes(models.Model):
+    class Meta:
+        verbose_name_plural = "Notes"
+
     title = models.CharField(max_length=50)
     content = models.TextField(max_length=500)
 
-
-def __str__(self):
-    return self.title
+    def _str_(self):
+        return self.title
