@@ -1,0 +1,9 @@
+<div>
+    {% if notes %}
+    {% for note in notes %}
+    <h1>{{note.title}}</h1>
+    <p>{{ note.content }}</p>
+    <a href="{% url 'usernotes' note.author.id %}">{{ note.author }}</a>
+    {% endfor %}
+    {% endif %}
+</div>
